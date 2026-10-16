@@ -38,3 +38,5 @@ if __name__ == "__main__":
     SAIDA.parent.mkdir(parents=True, exist_ok=True)
     con.execute(f"COPY base_entregas TO '{SAIDA.as_posix()}' (HEADER, DELIMITER ',')")
     print(f"\nBase exportada para o Power BI: {SAIDA.relative_to(RAIZ)}")
+    print("Caminho completo (cole no parâmetro CaminhoCSV do Power BI):")
+    print(f"  {SAIDA}")

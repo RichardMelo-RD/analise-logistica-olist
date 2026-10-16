@@ -96,7 +96,7 @@ A pontualidade caiu para **87,6%** na Black Friday (nov/2017) e para **81%** em 
 | Modelagem e limpeza (joins, regras de negócio, cálculo de etapas) | SQL | [`sql/01_base_entregas.sql`](sql/01_base_entregas.sql) |
 | Consultas dos KPIs | SQL | [`sql/`](sql/) |
 | Análise exploratória e gráficos | Python | [`notebooks/analise_logistica.ipynb`](notebooks/analise_logistica.ipynb) |
-| Dashboard | Power BI | [`powerbi/GUIA_POWER_BI.md`](powerbi/GUIA_POWER_BI.md) |
+| Dashboard (modelo, medidas DAX e relatório) | Power BI | [`powerbi/`](powerbi/) · [como abrir](powerbi/GUIA_POWER_BI.md) |
 
 **Definições usadas**
 - **Entregue no prazo (OTD):** data de entrega ≤ data estimada informada ao cliente.
@@ -120,13 +120,15 @@ python scripts/rodar_sql.py      # roda as consultas e gera data/processed/base_
 jupyter notebook notebooks/analise_logistica.ipynb
 ```
 
+Para abrir o dashboard, siga [`powerbi/GUIA_POWER_BI.md`](powerbi/GUIA_POWER_BI.md).
+
 ## 📁 Estrutura
 
 ```
 ├── data/              # dados brutos e tratados (gerados pelos scripts, fora do Git)
 ├── images/            # gráficos usados neste README
 ├── notebooks/         # análise exploratória em Python
-├── powerbi/           # guia e arquivo do dashboard
+├── powerbi/           # dashboard Power BI (.pbip) e guia
 ├── scripts/           # download dos dados e execução do SQL
 └── sql/               # modelagem e consultas dos KPIs
 ```

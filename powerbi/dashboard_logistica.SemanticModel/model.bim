@@ -1,0 +1,505 @@
+{
+  "compatibilityLevel": 1567,
+  "model": {
+    "culture": "pt-BR",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "pt-BR",
+    "tables": [
+      {
+        "name": "Entregas",
+        "lineageTag": "f8c52f62-8cdd-433c-86d5-ac65157c0e34",
+        "columns": [
+          {
+            "name": "order_id",
+            "dataType": "string",
+            "sourceColumn": "order_id",
+            "summarizeBy": "none",
+            "lineageTag": "e5483ff1-8092-49a0-bd89-8b16403766c7",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "data_compra",
+            "dataType": "dateTime",
+            "sourceColumn": "data_compra",
+            "summarizeBy": "none",
+            "lineageTag": "e3c93d9b-87b6-48ba-b021-52eab5876727",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "formatString": "dd/MM/yyyy"
+          },
+          {
+            "name": "mes_compra",
+            "dataType": "dateTime",
+            "sourceColumn": "mes_compra",
+            "summarizeBy": "none",
+            "lineageTag": "05a7fe3f-b6bf-4047-9a6f-cb1e532e1737",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "formatString": "MMM/yy"
+          },
+          {
+            "name": "uf_vendedor",
+            "dataType": "string",
+            "sourceColumn": "uf_vendedor",
+            "summarizeBy": "none",
+            "lineageTag": "0976fef3-8a45-409d-a1d9-0ba4d9bc18be",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "uf_cliente",
+            "dataType": "string",
+            "sourceColumn": "uf_cliente",
+            "summarizeBy": "none",
+            "lineageTag": "7d2f58d0-946b-48db-9e5d-6de0d0915c1d",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "regiao_cliente",
+            "dataType": "string",
+            "sourceColumn": "regiao_cliente",
+            "summarizeBy": "none",
+            "lineageTag": "91dc2551-584b-412c-a8a3-5cdd312e8af5",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "tipo_rota",
+            "dataType": "string",
+            "sourceColumn": "tipo_rota",
+            "summarizeBy": "none",
+            "lineageTag": "ac21d17b-6c8f-40b5-bdd3-fff81cd6aa47",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "qtd_itens",
+            "dataType": "int64",
+            "sourceColumn": "qtd_itens",
+            "summarizeBy": "sum",
+            "lineageTag": "a71be166-0090-4771-85db-734e4368d03d",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "formatString": "0"
+          },
+          {
+            "name": "valor_produtos",
+            "dataType": "double",
+            "sourceColumn": "valor_produtos",
+            "summarizeBy": "sum",
+            "lineageTag": "2533733f-19c2-43b7-8e9d-10482d8f1e5e",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "formatString": "#,0.00"
+          },
+          {
+            "name": "valor_frete",
+            "dataType": "double",
+            "sourceColumn": "valor_frete",
+            "summarizeBy": "sum",
+            "lineageTag": "1550fad9-e5c8-49fa-9dda-71a219c96742",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "formatString": "#,0.00"
+          },
+          {
+            "name": "frete_pct_produto",
+            "dataType": "double",
+            "sourceColumn": "frete_pct_produto",
+            "summarizeBy": "none",
+            "lineageTag": "c3da24ad-c30e-4bee-8800-75eab77d2991",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "formatString": "0.0%"
+          },
+          {
+            "name": "dias_aprovacao",
+            "dataType": "double",
+            "sourceColumn": "dias_aprovacao",
+            "summarizeBy": "none",
+            "lineageTag": "d5781db4-f4f1-42c3-9ecd-3d78ef7a7817",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "formatString": "0.0"
+          },
+          {
+            "name": "dias_expedicao",
+            "dataType": "double",
+            "sourceColumn": "dias_expedicao",
+            "summarizeBy": "none",
+            "lineageTag": "7339d14c-634f-43cc-bd93-39755e4c7858",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "formatString": "0.0"
+          },
+          {
+            "name": "dias_transporte",
+            "dataType": "double",
+            "sourceColumn": "dias_transporte",
+            "summarizeBy": "none",
+            "lineageTag": "3298d9db-b11b-4262-8af0-6f2812149626",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "formatString": "0.0"
+          },
+          {
+            "name": "lead_time_dias",
+            "dataType": "double",
+            "sourceColumn": "lead_time_dias",
+            "summarizeBy": "none",
+            "lineageTag": "f47f0243-99c7-4e1c-a650-257fca39d33f",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "formatString": "0.0"
+          },
+          {
+            "name": "prazo_prometido_dias",
+            "dataType": "int64",
+            "sourceColumn": "prazo_prometido_dias",
+            "summarizeBy": "none",
+            "lineageTag": "3ff3b13c-ee90-4cee-b699-00a9a94fc2b1",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "formatString": "0"
+          },
+          {
+            "name": "dias_atraso",
+            "dataType": "int64",
+            "sourceColumn": "dias_atraso",
+            "summarizeBy": "none",
+            "lineageTag": "38024cca-1a2c-45ed-b89d-6d1bce7d7060",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "formatString": "0"
+          },
+          {
+            "name": "entregue_no_prazo",
+            "dataType": "boolean",
+            "sourceColumn": "entregue_no_prazo",
+            "summarizeBy": "none",
+            "lineageTag": "b301b81a-9b19-4ae8-ad35-f29aaab9984a",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "vendedor_postou_no_prazo",
+            "dataType": "boolean",
+            "sourceColumn": "vendedor_postou_no_prazo",
+            "summarizeBy": "none",
+            "lineageTag": "82726391-a85e-4fc3-9079-911b6ba02364",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "faixa_atraso",
+            "dataType": "string",
+            "sourceColumn": "faixa_atraso",
+            "summarizeBy": "none",
+            "lineageTag": "b7e6d3ca-4ff2-4116-9119-9eac2b500400",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "nota_avaliacao",
+            "dataType": "int64",
+            "sourceColumn": "nota_avaliacao",
+            "summarizeBy": "none",
+            "lineageTag": "c7602d80-b8a3-4fa6-b2c8-63cfdcb25072",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "formatString": "0"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Entregas",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Fonte = Csv.Document(File.Contents(CaminhoCSV), [Delimiter = \",\", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),",
+                "    Cabecalhos = Table.PromoteHeaders(Fonte, [PromoteAllScalars = true]),",
+                "    // O CSV usa ponto como separador decimal: a conversão usa a cultura en-US",
+                "    // para funcionar em qualquer Windows (inclusive em português).",
+                "    Tipos = Table.TransformColumnTypes(Cabecalhos, {",
+                "        {\"order_id\", type text},",
+                "        {\"data_compra\", type date},",
+                "        {\"mes_compra\", type date},",
+                "        {\"uf_vendedor\", type text},",
+                "        {\"uf_cliente\", type text},",
+                "        {\"regiao_cliente\", type text},",
+                "        {\"tipo_rota\", type text},",
+                "        {\"qtd_itens\", Int64.Type},",
+                "        {\"valor_produtos\", type number},",
+                "        {\"valor_frete\", type number},",
+                "        {\"frete_pct_produto\", type number},",
+                "        {\"dias_aprovacao\", type number},",
+                "        {\"dias_expedicao\", type number},",
+                "        {\"dias_transporte\", type number},",
+                "        {\"lead_time_dias\", type number},",
+                "        {\"prazo_prometido_dias\", Int64.Type},",
+                "        {\"dias_atraso\", Int64.Type},",
+                "        {\"entregue_no_prazo\", type logical},",
+                "        {\"vendedor_postou_no_prazo\", type logical},",
+                "        {\"faixa_atraso\", type text},",
+                "        {\"nota_avaliacao\", Int64.Type}",
+                "    }, \"en-US\")",
+                "in",
+                "    Tipos"
+              ]
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "Pedidos",
+            "expression": "COUNTROWS(Entregas)",
+            "formatString": "#,0",
+            "displayFolder": "KPIs",
+            "lineageTag": "6a5968ce-42c2-4c24-8b74-4c764dde8db9"
+          },
+          {
+            "name": "% No Prazo",
+            "expression": [
+              "DIVIDE(",
+              "    CALCULATE(COUNTROWS(Entregas), Entregas[entregue_no_prazo] = TRUE()),",
+              "    COUNTROWS(Entregas)",
+              ")"
+            ],
+            "formatString": "0.0%",
+            "displayFolder": "KPIs",
+            "lineageTag": "210f9f7e-8b39-47d3-872e-c022a3b97020"
+          },
+          {
+            "name": "Pedidos Atrasados",
+            "expression": "CALCULATE(COUNTROWS(Entregas), Entregas[entregue_no_prazo] = FALSE())",
+            "formatString": "#,0",
+            "displayFolder": "KPIs",
+            "lineageTag": "6100c581-9198-4bcd-8576-80296b6b80f5"
+          },
+          {
+            "name": "Lead Time Médio",
+            "expression": "AVERAGE(Entregas[lead_time_dias])",
+            "formatString": "0.0\" dias\"",
+            "displayFolder": "KPIs",
+            "lineageTag": "a6f0fee6-755e-4ce4-8ee5-fcaf4f34ed92"
+          },
+          {
+            "name": "Prazo Prometido",
+            "expression": "AVERAGE(Entregas[prazo_prometido_dias])",
+            "formatString": "0.0\" dias\"",
+            "displayFolder": "KPIs",
+            "lineageTag": "5933c299-b681-4570-93e0-5b0164fc39dd"
+          },
+          {
+            "name": "Folga do Prazo",
+            "expression": "[Prazo Prometido] - [Lead Time Médio]",
+            "formatString": "0.0\" dias\"",
+            "displayFolder": "KPIs",
+            "lineageTag": "1a3e128a-2182-42e2-bd21-e365458b53ff"
+          },
+          {
+            "name": "Frete Médio",
+            "expression": "AVERAGE(Entregas[valor_frete])",
+            "formatString": "\"R$\" #,0.00",
+            "displayFolder": "KPIs",
+            "lineageTag": "8c1eadc4-a834-4a71-a57a-7a1cbf7926f9"
+          },
+          {
+            "name": "Frete % do Produto",
+            "expression": "DIVIDE(SUM(Entregas[valor_frete]), SUM(Entregas[valor_produtos]))",
+            "formatString": "0.0%",
+            "displayFolder": "KPIs",
+            "lineageTag": "644ac470-4bb4-4f64-bb62-bbfb2a7dacfe"
+          },
+          {
+            "name": "Nota Média",
+            "expression": "AVERAGE(Entregas[nota_avaliacao])",
+            "formatString": "0.00\" ★\"",
+            "displayFolder": "KPIs",
+            "lineageTag": "7831c0e6-e016-4572-9a95-f9bb1aad4bab"
+          },
+          {
+            "name": "% Vendedor Postou no Prazo",
+            "expression": [
+              "DIVIDE(",
+              "    CALCULATE(COUNTROWS(Entregas), Entregas[vendedor_postou_no_prazo] = TRUE()),",
+              "    COUNTROWS(Entregas)",
+              ")"
+            ],
+            "formatString": "0.0%",
+            "displayFolder": "KPIs",
+            "lineageTag": "45ad441a-7d23-4c6c-b032-790e8db1c8dd"
+          },
+          {
+            "name": "Dias Aprovação",
+            "expression": [
+              "CALCULATE(",
+              "    AVERAGE(Entregas[dias_aprovacao]),",
+              "    Entregas[dias_aprovacao] >= 0,",
+              "    Entregas[dias_expedicao] >= 0,",
+              "    Entregas[dias_transporte] >= 0",
+              ")"
+            ],
+            "formatString": "0.0",
+            "displayFolder": "Etapas",
+            "lineageTag": "b6065423-5d86-4202-be93-fc2a4dbaae13"
+          },
+          {
+            "name": "Dias Expedição",
+            "expression": [
+              "CALCULATE(",
+              "    AVERAGE(Entregas[dias_expedicao]),",
+              "    Entregas[dias_aprovacao] >= 0,",
+              "    Entregas[dias_expedicao] >= 0,",
+              "    Entregas[dias_transporte] >= 0",
+              ")"
+            ],
+            "formatString": "0.0",
+            "displayFolder": "Etapas",
+            "lineageTag": "077c9529-69b8-4cb1-99cd-737a851145d2"
+          },
+          {
+            "name": "Dias Transporte",
+            "expression": [
+              "CALCULATE(",
+              "    AVERAGE(Entregas[dias_transporte]),",
+              "    Entregas[dias_aprovacao] >= 0,",
+              "    Entregas[dias_expedicao] >= 0,",
+              "    Entregas[dias_transporte] >= 0",
+              ")"
+            ],
+            "formatString": "0.0",
+            "displayFolder": "Etapas",
+            "lineageTag": "b996bd8a-c1e1-4f26-a2f1-4a3609d6d868"
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      }
+    ],
+    "expressions": [
+      {
+        "name": "CaminhoCSV",
+        "kind": "m",
+        "expression": "\"C:\\analise-logistica-olist\\data\\processed\\base_entregas.csv\" meta [IsParameterQuery = true, Type = \"Text\", IsParameterQueryRequired = true]",
+        "lineageTag": "38ca89a5-b70a-415a-aa80-f82ac5c9cd7d",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Text"
+          }
+        ]
+      }
+    ],
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "0"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"CaminhoCSV\", \"Entregas\"]"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.130.0"
+      }
+    ]
+  }
+}

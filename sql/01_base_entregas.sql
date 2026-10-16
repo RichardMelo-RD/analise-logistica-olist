@@ -75,6 +75,15 @@ SELECT
     CAST(o.order_delivered_customer_date AS DATE)
         <= CAST(o.order_estimated_delivery_date AS DATE)             AS entregue_no_prazo,
     o.order_delivered_carrier_date <= i.prazo_postagem               AS vendedor_postou_no_prazo,
+    CASE
+        WHEN DATE_DIFF('day', CAST(o.order_estimated_delivery_date AS DATE),
+                              CAST(o.order_delivered_customer_date AS DATE)) <= 0 THEN '1. No prazo'
+        WHEN DATE_DIFF('day', CAST(o.order_estimated_delivery_date AS DATE),
+                              CAST(o.order_delivered_customer_date AS DATE)) <= 3 THEN '2. 1 a 3 dias de atraso'
+        WHEN DATE_DIFF('day', CAST(o.order_estimated_delivery_date AS DATE),
+                              CAST(o.order_delivered_customer_date AS DATE)) <= 7 THEN '3. 4 a 7 dias de atraso'
+        ELSE '4. 8+ dias de atraso'
+    END                                                              AS faixa_atraso,
 
     -- Satisfação
     a.nota_avaliacao
