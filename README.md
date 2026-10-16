@@ -27,6 +27,13 @@ responde a perguntas que um time de operações logísticas faria:
 > 💼 **Por que este tema:** venho da operação logística. Aqui uso dados para responder perguntas
 > que eu via no dia a dia do chão de operação.
 
+## 📊 Dashboard
+
+<img src="images/dashboard.png" width="100%" alt="Dashboard Power BI de performance logística" />
+
+Dashboard em Power BI com filtro por região: KPIs, evolução mensal, pontualidade por UF, tempo por
+etapa do processo e nota x atraso. Arquivos e instruções em [`powerbi/`](powerbi/).
+
 ## 📌 Principais resultados
 
 | Indicador | Valor |
@@ -81,12 +88,6 @@ A pontualidade caiu para **87,6%** na Black Friday (nov/2017) e para **81%** em 
 | Postagem atrasada do vendedor | Monitorar e alertar vendedores que postam fora do prazo |
 | Prazo prometido com ~12 dias de folga | Testar prazos mais precisos por região (pode aumentar a conversão) |
 | Quedas em picos sazonais | Planejar capacidade logística antes de Black Friday e datas sazonais |
-
-<!--
-## 📊 Dashboard
-
-<img src="images/dashboard.png" width="100%" alt="Dashboard Power BI" />
--->
 
 ## 🛠️ Como foi feito
 
