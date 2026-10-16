@@ -149,6 +149,6 @@ e anonimizados de pedidos reais (licença MIT).
 
 <p align="center">
   Feito por <b>Richard Melo</b> ·
-  <a href="https://www.linkedin.com/in/richard-melo-16096b181">LinkedIn</a> ·
+  <a href="https://www.linkedin.com/in/richard-melo-dados">LinkedIn</a> ·
   <a href="https://github.com/RichardMelo-RD">GitHub</a>
 </p>
